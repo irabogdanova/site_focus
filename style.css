@@ -1,0 +1,139 @@
+*{
+    margin: 0 ;
+}
+@font-face {
+    font-family: "Noto-R";
+    src: url("/fonts/NotoSansJP-Regular.otf");
+}
+@font-face {
+    font-family: "Noto-B";
+    src: url("/Site_Focus/fonts/NotoSansJP-Bold.otf");
+}
+
+body{
+    max-width: 80vw;
+    margin: 0 auto;
+}
+/* Navbar */
+.navbar{
+    height: 150px;
+    box-shadow: 1px 1px 10px #cccccc;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    text-align: center;
+}
+.navbar .container img{
+    width: 150px;
+    padding-left: 20px;
+}
+    
+.navbar-menu{
+    list-style: none;
+    margin-top: 65px;
+}
+
+.navbar-menu li{
+    display: inline-block;
+    float: left;
+        
+}
+.navbar-menu li a{
+    text-decoration: none;
+    font-family: "NotoB";
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 70px;
+    color: #410365;
+    }
+.navbar-menu li a:hover{
+    color: white;
+    background-color: #ff0066;
+    border-radius: 2px;
+    height: 50px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.navbar-wrap{
+    display: flex;
+    flex-flow: row nowrap ;
+    }
+
+    /* Algorithm */
+    p{
+        font-family: "NotoR";
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color:#ff0066 ;
+        padding-top: 20px;
+    }
+    .steps{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .Steps_algorithm{
+        border: 2px solid #cccccc;
+        box-shadow: 1px 1px 10px #cccccc;
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+        padding-top: 34px;
+        border-radius: 2px;
+    }
+    .Steps_algorithm:hover{
+        border: 2px solid #410365;
+        
+        background-color: #ff0066;
+        font-weight: 700;
+        color: white;
+        font-size: 18px;
+    }
+    /* Search */
+    .searsh{
+        margin-top: 20px;
+
+    }
+    .region, .date, .people, .poisk{
+        margin-top: 20px;
+    }
+    .poisk{
+        border: 2px solid #410365;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #ff0066 ;
+        color: white;
+        animation-name: button;
+        animation-duration: 3s;
+        
+    }
+    @keyframes button{
+        to{transform:scale(1.1)}
+    }
+    /* Footer */
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        box-shadow: 1px 1px 10px #cccccc;
+         }
+    .tel, .footer-t{
+        margin: 30px 20px 30px 20px;
+        
+    }
+    .footer-t{
+        display: flex;
+        gap: 20px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: black;
+    }
